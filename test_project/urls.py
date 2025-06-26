@@ -26,6 +26,9 @@ urlpatterns = [
     path('email10.html', views.email10, name='email10'),
     path('email11.html', views.email11, name='email11'),
     path('location/', views.location_view, name='location'),
+    path('payment-failed/', views.payment_failed, name='payment_failed'),
+    path('payment-pending/', views.payment_pending, name='payment_pending'),
+        
 
     # ✅ Webhook endpoint for Fawaterak
     path('webhook/fawaterak/', views.fawaterak_webhook, name='fawaterak_webhook'),
