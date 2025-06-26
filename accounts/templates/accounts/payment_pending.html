@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Pending</title>
+  <style>
+    :root {
+      --first-color: hsl(35, 100%, 50%);
+      --first-color-alt: hsl(35, 90%, 45%);
+      --first-color-light: hsl(38, 100%, 78%);
+      --title-color: hsl(231, 45%, 20%);
+      --second-color: hsl(195, 75%, 52%);
+      --text-color: hsl(231, 25%, 40%);
+      --white-color: hsl(0, 0%, 100%);
+      --container-color: hsl(0deg 0% 0% / 53%);
+      --dark-color: hsl(231, 50%, 15%);
+      --body-color: hsl(231, 40%, 10%);
+      --body-white-color: hsl(0, 0%, 100%);
+      --body-first-color: hsl(35, 100%, 50%);
+      --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
+      --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4);
+      --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
+      --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--body-color);
+      color: var(--white-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .pending-container {
+      background-color: var(--container-color);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(8px);
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid var(--first-color-light);
+      border-top: 5px solid var(--first-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .pending-container h1 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: var(--first-color);
+    }
+
+    .pending-container p {
+      font-size: 1.1em;
+      color: var(--text-color);
+    }
+
+    @media (max-width: 600px) {
+      .pending-container h1 {
+        font-size: 1.5em;
+      }
+
+      .pending-container p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pending-container">
+    <div class="spinner"></div>
+    <h1>⏳ Payment Pending</h1>
+<p>Your payment is being confirmed.<br>We’ll notify you as soon as it’s activated.<br><strong>If you don’t get access within 15 minutes, please contact us on WhatsApp.</strong></p>
+<a href="https://www.omarelmahdy.com" style="display:inline-block;margin-top:20px;color:var(--first-color);text-decoration:none;font-weight:bold;">← Back to Home</a>
+
+  </div>
+</body>
+</html>
+

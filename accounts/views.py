@@ -12,6 +12,10 @@ def about(request):
     return render(request, 'accounts/about.html')
 def calc2(request):
     return render(request, 'accounts/calc2.html')
+def payment_failed(request):
+    return render(request, 'accounts/payment_failed.html')
+def payment_pending(request):
+    return render(request, 'accounts/payment_pending.html')
 
 def calc(request):
     return render(request, 'accounts/calc.html')
